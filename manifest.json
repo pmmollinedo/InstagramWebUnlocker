@@ -1,0 +1,27 @@
+{
+	"name": "Instagram Web Unlocker",
+	"version": "1",
+	"icons": {
+		"256": "icon.png"
+	},
+	"description": "Chrome extension to avoid Instagram Web version to lock the screen until login.",
+	"homepage_url": "https://github.com/pmmollinedo/InstagramWebUnlocker",
+	"manifest_version": 2,
+	"minimum_chrome_version": "36",
+	"background": {
+		"scripts": ["src/content.js"],
+		"persistent": false
+	  },
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": [
+				"https://www.instagram.com/*",
+				"https://instagram.com/*"
+			],
+			"js": [
+				"src/content.js"
+			]
+		}
+	]
+}
