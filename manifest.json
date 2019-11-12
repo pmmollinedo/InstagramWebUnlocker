@@ -1,8 +1,9 @@
 {
 	"name": "Instagram Web Unlocker",
+	"short_name":"Instagram Web Unlocker",
 	"version": "1.0.0",
 	"icons": {
-		"256": "icon.png"
+		"128": "resources/128.png"
 	},
 	"description": "Chrome extension to avoid Instagram Web version to lock the website until login.",
 	"homepage_url": "https://github.com/pmmollinedo/InstagramWebUnlocker",
